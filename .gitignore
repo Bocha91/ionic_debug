@@ -1,0 +1,15 @@
+*.old
+.vscode
+ble-service
+bleAutoService
+bluetooth
+device
+helloworld
+ionic-bluetooth-serial-example
+Ionic.code-workspace
+ionic4-ble-example-master
+ionic4-ble-example-master.zip
+photo-gallery
+serial-example
+serialBluetooth
+ua-911btc_v0
