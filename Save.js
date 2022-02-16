@@ -43,9 +43,12 @@
             "when": "activeEditor"
         }
     ]
-    Сам файл положил в `E:\PCAD\Nobilis\ionic\`
-    настройки в `E:\PCAD\Nobilis\ua-911btc\.vscode\task.json`
-    и в `C:\с рабочего стола\My Util\VisualStudioCodePM\VSCode-win32-x64-1.60.2.Ionic\data\user-data\User\keybindings.json`
+    Сам файл положил в `E:\PCAD\Nobilis\ionic\` это корень моих проектов на ionic.
+    Настройки задач положил в `E:\PCAD\Nobilis\ua-911btc\.vscode\task.json` это папка 
+    одного из моих проектов.
+    Настройки сочитания клавишь для запуска положил в 
+    `C:\с рабочего стола\My Util\VisualStudioCodePM\VSCode-win32-x64-1.60.2.ionic\data\user-data\User\keybindings.json`, 
+    я пользуюсь PM версией VSCode.
 
     #### Если используете файл .code-workspace
     У меня много папок проектов которые перечислены в `Ionic.code-workspace` и мне не удобно 
@@ -53,14 +56,14 @@
     раздел task и записать туда всё что в файле .vscode\task.json, что я и сделал. 
     И это работает для всех моих проектов из этого рабочего пространства.
 
-    добавил ограничение по разширениям и повесил на "ctrl+s"
+    добавил ограничение по разширениям файлов и перевесил на "ctrl+s"
 
 */
 const { argv } = require("process");
 const fs  = require("fs");
 const path  = require("path");
 
-//console.log("__63__");
+//console.log("__66__");
 
 // обрабатываем только файлы программ с разширениями 
 const extname = [".js",".ts"] // добавить при реобходимости
@@ -99,7 +102,7 @@ fs.readFile(argv[2], function(err, data) {
         //console.log(n,array[i]); 
     }
     
-    //console.log("__102__");
+    //console.log("__105__");
     let dota = array.join(резделитель);  // соберём файл из строк
     // запишем во временный файл
     fs.writeFile(argv[2]+".__line__",dota,(err)=>{
